@@ -79,7 +79,7 @@ public class InformationEstimator implements InformationEstimatorInterface{
                 myFrequencer.setTarget(subBytes(myTarget, start, end));
                 array.put(target,iq(myFrequencer.frequency()));//targetとその情報量をリストに追加
             }
-		value1 = value1 + array.get(target);//指定した文字の情報量をたす
+		value1 = value1 + array.get(target);//指定した文字の情報量をたす、要素を取り出す
 		start = end;
 	    }
 	    // System.out.println(" "+ value1);
